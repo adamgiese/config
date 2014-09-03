@@ -8,6 +8,7 @@ cd config
 mv * .[^.]* ..
 cd ..
 rm -rf config
+mkdir -p ~/.vim/bundle
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim -c "execute 'PluginInstall' | quitall!"
+vim +PluginInstall! +qall 
 ```
