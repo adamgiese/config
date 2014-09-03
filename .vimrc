@@ -26,15 +26,18 @@ vnoremap : ;
 " Disable bad habits
 inoremap <ESC> <NOP>
 
-nnoremap <Left> <NOP>
-nnoremap <Right> <NOP>
-nnoremap <Up> <NOP>
-nnoremap <Down> <NOP>
-
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
-inoremap <Up> <NOP>
-inoremap <Down> <NOP>
-
 let mapleader = ","
 
+" Vundle Setup
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-surround.git'
+Plugin 'scrooloose/nerdtree.git'
+noremap <silent> <leader>1 :NERDTreeToggle<CR>
+Plugin 'kien/ctrlp.vim.git'
+let g:ctrlp_working_path_mode = 'ar'
+let g:ctrlp_extensions = ['dir']
+let g:ctrlp_cmd = 'CtrlP'
+call vundle#end()            " required
+filetype plugin indent on    " required
