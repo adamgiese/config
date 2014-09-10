@@ -34,7 +34,8 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-surround.git'
 Plugin 'scrooloose/nerdtree.git'
-noremap <silent> <leader>1 :NERDTreeToggle<CR>
+nnoremap <silent> <F4> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>1 :NERDTreeToggle<CR>
 Plugin 'kien/ctrlp.vim.git'
 let g:ctrlp_working_path_mode = 'ar'
 let g:ctrlp_extensions = ['dir']
