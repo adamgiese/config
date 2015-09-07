@@ -13,6 +13,7 @@ set hidden
 set number numberwidth=3
 set wrap linebreak
 set nocompatible
+set guifont=Hack
 colorscheme darkblue  
 
 " Use a more efficient escape
