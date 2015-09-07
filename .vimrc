@@ -5,7 +5,7 @@ set ruler
 set laststatus=2
 set backspace=indent,eol,start
 set showmode
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set history=1000
 set encoding=utf-8
 set noswapfile
