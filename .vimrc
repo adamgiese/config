@@ -14,7 +14,8 @@ set number numberwidth=3
 set wrap linebreak
 set nocompatible
 set guifont=Hack
-colorscheme darkblue  
+colorscheme dracula
+syntax on
 
 " Use a more efficient escape
 inoremap jk <ESC>
@@ -35,6 +36,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-surround.git'
+Plugin 'dracula/vim'
 Plugin 'scrooloose/nerdtree.git'
 nnoremap <silent> <F4> :NERDTreeToggle<CR>
 nnoremap <silent> <leader>1 :NERDTreeToggle<CR>
