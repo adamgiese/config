@@ -14,7 +14,7 @@ set number numberwidth=3
 set wrap linebreak
 set nocompatible
 set guifont=Hack
-color dracula  
+color desert  
 syntax on
 
 " Vue Highlighting
@@ -71,9 +71,4 @@ filetype plugin indent on    " required
 
 " supertab settings
 
-" custom macros
-
-let @s = "v/^$
-k;sort
-" "sort alphabetically until empty line
 let g:SuperTabNoCompleteAfter = ['"', "'", '^', '\s']
